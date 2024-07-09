@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>POST Request</title>
+  </head>
+  <body>
+    <button onclick="makePostRequest()">Make POST Request</button>
+    <script>
+      function makePostRequest() {
+        fetch("http://localhost:8000/post", {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify({ key: "value" }), // Optional body content
+        })
+          .then((response) => response.text())
+          .then((data) => console.log(data))
+          .catch((error) => console.error("Error:", error));
+      }
+    </script>
+  </body>
+</html>

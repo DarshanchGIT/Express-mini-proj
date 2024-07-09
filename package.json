@@ -1,0 +1,18 @@
+{
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.19.2",
+    "nodemon": "^3.1.4"
+  },
+  "name": "expressjs",
+  "version": "1.0.0",
+  "main": "hospital.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node hospital.js",
+    "dev": "nodemon hospital.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "description": ""
+}
